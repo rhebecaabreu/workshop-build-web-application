@@ -55,5 +55,21 @@ export default {
 </script>
 
 <style lang="scss">
+.home {
+  .column-cards {
+    height: 100%;
 
+    .card-title {
+      font-family: 'Ubuntu-Bold';
+      font-size: 28px;
+      margin-bottom: 10px;;
+    }
+
+    .card-subtitle {
+      font-family: 'Ubuntu-Regular';
+      font-size: 16px;
+      margin-bottom: 80px;
+    }
+  }
+}
 </style>
