@@ -20,7 +20,7 @@ Repositório oficial do workshop construindo uma aplicação web do zero. Este r
 - Hospedando aplicação
 
 ## Material de apoio
-- [Slides](https://drive.google.com/file/d/1gEHr4EBdu03LMdFyhLLx1GwltyrzZav0/view?usp=sharing)
+- [Slides](https://drive.google.com/file/d/1c1C4e1C4YYnB940VPHrnc_Yi_czZ3Oso/view?usp=sharing)
 - [Assets](https://drive.google.com/drive/folders/1V2JhGB3rr4sVztCxyOMO3Ktwxi14HiCn)
 
 ## Aulas
