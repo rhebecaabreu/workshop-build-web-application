@@ -1,12 +1,16 @@
 <template>
   <v-row
     no-gutters
+    justify="center"
     class="home"
   >
     <v-col
+      lg="4"
+      md="12"
+      class="column-cards"
     >
       <v-card
-        class="pa-2"
+        class="pa-0"
         elevation="0"
         tile
       >
@@ -18,25 +22,28 @@
         </v-card-subtitle>
         <v-card-text>
           <v-btn
-            class="ma-2"
-            color="secondary"
+            class="ma-2 create-account buttons"
+            color="#e451ff"
+            @click="goTo('register')"
           >
             Criar conta
           </v-btn>
           <v-btn
-            class="ma-2"
+            class="ma-2 buttons"
             outlined
-            color="indigo"
+            color="#e451ff"
           >
             Já possuo uma conta
           </v-btn>
         </v-card-text>
       </v-card>
     </v-col>
-        <v-col
+    <v-col
+      lg="4"
+      md="12"
     >
       <v-card
-        class="pa-2"
+        class="pa-0"
         elevation="0"
         tile
       >
@@ -50,7 +57,12 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  methods: {
+    goTo(name) {
+      this.$router.push({ name: name })
+    }
+  }
 }
 </script>
 
@@ -61,14 +73,27 @@ export default {
 
     .card-title {
       font-family: 'Ubuntu-Bold';
-      font-size: 28px;
-      margin-bottom: 10px;;
+      font-size: 40px;
+      margin-bottom: 10px;
+      line-height: 40px;
+      word-break: break-word;
     }
 
     .card-subtitle {
       font-family: 'Ubuntu-Regular';
       font-size: 16px;
       margin-bottom: 80px;
+      word-break: break-word;
+    }
+  
+    .buttons {
+      text-transform: none;
+      font-family: 'Ubuntu-Bold';
+      height: 48px;
+    }
+
+    .create-account {
+      color: $button-text-secondary-color;
     }
   }
 }
