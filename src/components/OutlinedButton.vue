@@ -3,6 +3,7 @@
     <v-btn
       class="ma-2 configuration"
       outlined
+      height="48"
       color="#e451ff"
     >
       {{ text }}

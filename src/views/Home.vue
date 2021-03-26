@@ -32,6 +32,7 @@
             class="ma-2 buttons"
             outlined
             color="#e451ff"
+            @click="goTo('login')"
           >
             Já possuo uma conta
           </v-btn>
@@ -59,8 +60,8 @@
 export default {
   name: 'Home',
   methods: {
-    goTo(name) {
-      this.$router.push({ name: name })
+    goTo(route) {
+      this.$router.push({ name: route })
     }
   }
 }

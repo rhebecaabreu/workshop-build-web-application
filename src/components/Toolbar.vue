@@ -7,7 +7,11 @@
         elevation="0"
         dark
       >
-        <v-toolbar-title class="tasks-title">Tasks</v-toolbar-title>
+        <v-toolbar-title  class="tasks-title">
+          <v-btn color="#e451ff" text to="/" class="button">
+            Tasks
+          </v-btn>
+        </v-toolbar-title>
 
         <v-spacer></v-spacer>
 
@@ -34,7 +38,16 @@ export default {
   .tasks-title {
     color: #e451ff;
     font-family: 'Ubuntu-Bold';
+
+    .button {
+      text-transform: none;
+    }
+    
+    .v-btn.v-size--default {
+      font-size: 20px;
+    }
   }
+
 
   .buttons {
     text-transform: none;
