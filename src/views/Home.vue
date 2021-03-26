@@ -24,7 +24,6 @@
           <v-btn
             class="ma-2 create-account buttons"
             color="#e451ff"
-            @click="goTo('register')"
           >
             Criar conta
           </v-btn>
@@ -41,6 +40,7 @@
     <v-col
       lg="4"
       md="12"
+      class="pl-10"
     >
       <v-card
         class="pa-0"
