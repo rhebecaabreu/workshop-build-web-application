@@ -14,18 +14,18 @@ Repositório oficial do workshop construindo uma aplicação web do zero. Este r
 - Criando repositório do projeto no Github
 - Iniciando projeto Vue.js
 - Configurando plugins e framework Vuetify
-- Realizando cadastro, login por email e rede social
+- Realizando cadastro e login por email
 - Consumindo API
 - Exibindo dados da API na aplicação
-- Hospedando aplicação
+- Hospedando aplicação e rede social
 
 ## Material de apoio
-- [Slides](https://drive.google.com/file/d/1c1C4e1C4YYnB940VPHrnc_Yi_czZ3Oso/view?usp=sharing)
+- [Slides](https://drive.google.com/file/d/1gzHeGyIJgsvhreNMHmPYhSyc9ozTnco4/view?usp=sharing)
 - [Assets](https://drive.google.com/drive/folders/1V2JhGB3rr4sVztCxyOMO3Ktwxi14HiCn)
 
 ## Aulas
 - [Aula 1](https://www.youtube.com/watch?v=XCdUkVHYBws&t=468s)
-
+- [Aula 2](https://www.youtube.com/watch?v=721yKA_ogBA)
 
 ## Setup do projeto
 
