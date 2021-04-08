@@ -1,11 +1,13 @@
 const state = {
   user: null,
   hasSession: false,
+  googleToken: '',
 };
 
 const getters = {
   currentUser: () => (state.user),
   hasSession: () => (state.hasSession),
+  getToken: () => (state.googleToken),
 };
 
 const actions = {
@@ -14,6 +16,9 @@ const actions = {
     if (payload) {
       commit('setSession', true)
     }
+  },
+  addGoogleToken({ commit }, payload) {
+    commit('setToken', payload)
   }
 };
 
@@ -25,6 +30,10 @@ const mutations = {
   setSession($state, payload) {
     const stateCopy = $state;
     stateCopy.hasSession = payload;
+  },
+  setToken($state, payload) {
+    const stateCopy = $state;
+    stateCopy.googleToken = payload;
   }
 };
 

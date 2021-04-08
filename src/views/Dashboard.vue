@@ -1,25 +1,55 @@
 <template>
-  <div> Olá, {{ userName }} </div>
+  <div> Olá, {{ userName }}
+    <v-btn
+      @click="fetchAuthCode()"
+    >
+      Sincronizar tasks
+    </v-btn> 
+    <div>
+      {{ listItems }}
+    </div>
+  </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'Dashboard',
   data() {
     return {
       userName: '',
+      listItems: '',
     };
   },
   computed: {
-    ...mapGetters(['currentUser']),
+    ...mapGetters(['currentUser', 'getToken', 'lists']),
     user() {
       return this.currentUser;
+    },
+  },
+  watch: {
+    getToken(value) {
+      if (value) {
+        this.fetchLists();
+      }
+    },
+    lists(value) {
+      if (value) {
+        this.listItems = value.items; 
+      }
     }
   },
-  
   mounted() {
     this.userName = this.currentUser.name;
+  },
+  methods: {
+    ...mapActions(['fetchLists', 'addGoogleToken']),
+    fetchAuthCode() {
+      this.$gAuth.signIn().then((response) => {
+        console.log(response);
+        this.addGoogleToken(response.tc.access_token);
+      });
+    },
   }
 }
 </script>
