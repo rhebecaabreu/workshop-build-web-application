@@ -20,12 +20,14 @@ Repositório oficial do workshop construindo uma aplicação web do zero. Este r
 - Hospedando aplicação e rede social
 
 ## Material de apoio
-- [Slides](https://drive.google.com/file/d/1gzHeGyIJgsvhreNMHmPYhSyc9ozTnco4/view?usp=sharing)
+- [Slides](https://drive.google.com/file/d/1eS0Q9aDMdGk-I3lI6kVwVzjQb9aB4qX8/view)
 - [Assets](https://drive.google.com/drive/folders/1V2JhGB3rr4sVztCxyOMO3Ktwxi14HiCn)
 
 ## Aulas
 - [Aula 1](https://www.youtube.com/watch?v=XCdUkVHYBws&t=468s)
 - [Aula 2](https://www.youtube.com/watch?v=721yKA_ogBA)
+- [Aula 3](https://www.youtube.com/watch?v=Q3iHhaFIX7I&t=40s)
+- [Aula 4](https://www.youtube.com/watch?v=TQuoq6pkfAo)
 
 ## Setup do projeto
 
