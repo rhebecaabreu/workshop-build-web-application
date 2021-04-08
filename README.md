@@ -14,8 +14,8 @@ Repositório oficial do workshop construindo uma aplicação web do zero. Este r
 - Criando repositório do projeto no Github
 - Iniciando projeto Vue.js
 - Configurando plugins e framework Vuetify
-- Realizando cadastro e login por email
-- Consumindo API
+- Realizando cadastro e login por email com Firebase
+- Consumindo API do Google Tasks
 - Exibindo dados da API na aplicação
 - Hospedando aplicação e rede social
 
