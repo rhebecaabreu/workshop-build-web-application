@@ -17,7 +17,7 @@ Repositório oficial do workshop construindo uma aplicação web do zero. Este r
 - Realizando cadastro e login por email com Firebase
 - Consumindo API do Google Tasks
 - Exibindo dados da API na aplicação
-- Hospedando aplicação e rede social (https://workshop-vuejs.herokuapp.com)
+- Hospedando aplicação e login com rede social (https://workshop-vuejs.herokuapp.com)
 
 ## Material de apoio
 - [Slides](https://drive.google.com/file/d/1tpvbv8kVioTIUb-Dg-bLWlUHUNhEWUt7/view?usp=sharing)
