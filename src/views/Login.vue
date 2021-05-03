@@ -25,6 +25,7 @@
           <filled-button
             text="Entrar com Facebook"
             icon="mdi-facebook"
+            @click="loginWithFacebook"
           />
         </v-row>
       </v-card>
@@ -77,6 +78,21 @@ export default {
         email: data.user.email
       })
       this.$router.push({ name: 'dashboard' });
+    },
+    loginWithFacebook() {
+      var provider = new firebase.auth.FacebookAuthProvider();
+      
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then((result) => {
+          console(result);
+          if (result.credential.accessToken) {
+            this.redirectUser(data);
+          }
+        }).catch((error) => {
+          console.log(error)
+        });
     }
   },
 }
