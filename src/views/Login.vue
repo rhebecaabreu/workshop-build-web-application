@@ -88,7 +88,7 @@ export default {
         .then((result) => {
           console(result);
           if (result.credential.accessToken) {
-            this.redirectUser(data);
+            this.redirectUser(result);
           }
         }).catch((error) => {
           console.log(error)
